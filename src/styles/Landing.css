@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Avenir LT Std-55Roman", sans-serif;
+  font-size: large;
+}
+
+body {
+  background-image: url("../images/background1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Avenir LT Std-55Roman", sans-serif;
+  background-color: rgba(18, 27, 103, 0.75);
+  align-items: center;
+}
+
+/* styling for whole sign up and login page */
+#login-page,
+#signup-page {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* styling for sign up and login division box */
+#login-div,
+#signup-div {
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 40px 20px;
+}
+
+#login-div {
+  margin-top: 10%;
+}
+
+#signup-div {
+  margin-top: 5%;
+}
+
+.symbol {
+  height: 20px;
+  width: 20px;
+  margin-top: 3%;
+}
+
+#appname {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+
+/* styling for login and sign up buttons on login and sign up pages */
+.button {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: none;
+  height: 7%;
+  width: 50%;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 200;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* styling for each input line div for login and sign up */
+.login-line-div,
+.signup-line-div {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: 1px solid;
+  border-color: #ffffff;
+  padding: 12px 11px;
+  border-radius: 4px;
+  width: 90%;
+  height: 5%;
+  gap: 5%;
+}
+
+/* styling for each input box for login and sign up */
+.login-input,
+.signup-input {
+  background: transparent;
+  border: none;
+  width: 100%; 
+  height: 75%;
+  font-family: "Avenir LT Std-55Roman", sans-serif;
+  font-size: 15px;
+  margin-top: 2%;
+}
+
+.login-input::placeholder,
+.signup-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+/* styling for logo at landing */
+#logo {
+  width: 15%;
+  height: 80%;
+}
+
+/* styling for heading at landing */
+#landing-head {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 12%;
+  text-align: center;
+}
+
+/* styling for the logo and buttons in landing page*/
+#logo-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 1%;
+  height: 20%;
+}
+
+#landing-buttons-div {
+  display: flex;
+  gap: 5%; 
+  width: 20%;
+  height: 100%;
+  margin-right: 2%;
+}
+
+.button-form {
+  width: 50%;
+  height: 100%;
+}
+
+.landing_page_button {
+  padding: 5px 10px;
+  background-color: #fff;
+  width: 100%;
+  height: 40%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30%;
+  font-size: 15px;
+}
+
+.landing_page_button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}

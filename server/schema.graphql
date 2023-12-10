@@ -1,0 +1,42 @@
+#################### User Service Related APIs ####################
+## Types and Inputs ##
+type File {
+  _id: ID!
+  fileHash: String!
+  fileName: String!
+  fileSize: Int!
+  ownerEmail: String!
+  uploadedTime: String!
+  sharedEmails: [String!]
+}
+
+input FileInput {
+  fileHash: String!
+  fileName: String!
+  fileSize: Int!
+  ownerEmail: String!
+  uploadedTime: String!
+}
+
+type User {
+  email: String!
+  password: String!
+  ownedFiles: [ID!]
+  accessedFiles: [ID!]
+}
+
+## Queries ##
+type Query {
+  getUser(email: String!): User!
+  getFiles(ids: [ID!]): [File!]
+  getSharedFiles(ids: [ID!]): [File!]
+}
+
+## Mutations ##
+type Mutation {
+  addUser(email: String!, password: String!): User!
+  addFile(fileHash: String!, fileName: String!, fileSize: Int!, ownerEmail: String!): User!
+  deleteFile(id: String!): User!
+  updateFile(id: String!, fileHash: String!, fileName: String!, fileSize: Int!): File!
+  updateSharedEmails(id: String!, emails: [String!]): File!
+}

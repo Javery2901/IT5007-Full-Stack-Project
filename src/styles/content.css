@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Avenir LT Std-55Roman", sans-serif;
+    font-size: large;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Avenir LT Std-55Roman", sans-serif;
+    background-color: rgba(18, 27, 103, 0.75);
+    align-items: center;
+}
+
+.logged-in-background {
+    background-image: none !important;
+    background-color: rgb(246, 246, 246) !important;
+}
+
+/* navigation bar on the left */
+.menu-panel {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    float: left;
+    width: 20%;
+    background-color: rgba(33, 72, 192, 0.1); 
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100vh; 
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+
+.menu {
+    padding: 0;
+    margin-top: 10%;
+    flex-direction: column;
+    display: flex;
+}
+
+.snav-li {
+    list-style-type: none;
+    padding: 10px 20px;
+    margin-left: 1%;
+    color: black; 
+    font-weight: bold;
+}
+
+.snav-li:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(33, 72, 192); 
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.selected {
+    color: rgb(33, 72, 192); 
+}
+
+/* file table styling */
+
+.myFileTable, .mySharedTable {
+    margin-top: 2%;
+    font-size: 0.9em;
+    color: #5F6368; 
+    width: 1000px;
+}
+
+.myFileTable th:nth-child(1) { width: 10%; } 
+.myFileTable th:nth-child(2) { width: 5%; } 
+.myFileTable th:nth-child(3) { width: 15%; } 
+.myFileTable th:nth-child(4) { width: 10%; } 
+.myFileTable th:nth-child(5) { width: 15%; } 
+.myFileTable th:nth-child(6) { width: 45%; } 
+.myFileTable th:nth-child(7) { width: 10%; }
+
+.myFileTable tbody tr:hover, .mySharedTable tbody tr:hover {
+    background-color: #E8F0FE;
+}
+
+.myFileTable th, .myFileTable td,
+.mySharedTable th, .mySharedTable td {
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.myFileTable th, .mySharedTable th {
+    background-color: rgb(60, 93, 191);
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    border-right: 1px solid #E0E0E0;
+}
+
+.fileListTableDiv {
+    margin-left: 30%;
+    width: 100%; 
+    min-width: 600px; 
+    padding: 20px;
+}
+
+.shardWithMeDiv {
+    margin-left: 40%;
+    width: 100%; 
+    min-width: 800px; 
+    padding: 20px;
+}
+
+/* content wrapping second navbar and the table */
+
+.custom-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboardContent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* file uploader button and pop-up styling on the top */
+
+.fileUploaderDiv {
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 20%;
+}
+
+/* normal button and input boxes in the table and file uploader */
+
+.standard-button {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 100%;
+    background-color: rgba(33, 72, 192, 0.6); 
+}
+
+.delete-button {
+    background-color: rgb(232, 106, 106);
+}
+
+.save-button {
+    background-color: rgb(168, 168, 168);
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 6px; 
+    margin-left: 3px;
+}
+
+.emailInputDiv {
+    width: 100%;
+}
+
+.emailInput {
+    width: 80%;
+}
+
